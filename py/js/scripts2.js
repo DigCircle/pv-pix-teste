@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('#button_chechout_hero').show();
         $('#button_chechout_final').show();
         $('#coments').show();
-    }, 720000);
+    }, 600000);
 });
 var scrollEventHandler = function () {
     window.scroll(0, window.pageYOffset)
