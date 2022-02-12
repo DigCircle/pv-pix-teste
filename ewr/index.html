@@ -19,6 +19,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </html>
 <p><br />
 <title> Método Adiós Diabetes</title>
+<script type="text/javascript">
+  var newUrl = location.pathname + location.search;
+
+  (function(window, location) {
+  history.replaceState(null, document.title, newUrl+"#!/backbutton");
+  history.pushState(null, document.title, newUrl);
+  window.addEventListener("popstate", function() {
+  if(location.hash === "#!/backbutton") {
+  history.replaceState(null, document.title, newUrl);
+  setTimeout(function(){
+  location.replace("/py");
+  },0);
+  }
+  }, false);
+  }(window, location));
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></p>
 <link href="favicon.ico" rel="shortcut icon" />
 <style type="text/css">header {
