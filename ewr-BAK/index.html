@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="utf-8">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P3VCDHL');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3VCDHL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
+<p><br />
+<title> Método Adiós Diabetes</title>
+<script type="text/javascript">
+  var newUrl = location.pathname + location.search;
+
+  (function(window, location) {
+  history.replaceState(null, document.title, newUrl+"#!/backbutton");
+  history.pushState(null, document.title, newUrl);
+  window.addEventListener("popstate", function() {
+  if(location.hash === "#!/backbutton") {
+  history.replaceState(null, document.title, newUrl);
+  setTimeout(function(){
+  location.replace("/py");
+  },0);
+  }
+  }, false);
+  }(window, location));
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></p>
+<link href="favicon.ico" rel="shortcut icon" />
+<style type="text/css">header {
+      background:"headerbg2.png";
+      background-repeat: no-repeat;
+    }
+    @font-face {
+      font-family: Gotham Rounded;
+      src: url("font.otf") format("opentype");
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      font-family: Gotham Rounded;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background: url("fundo.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .container {
+      width: 700px;
+      max-width: 90%;
+    }
+    .black {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 2px black;
+    }
+    .answer {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+    }
+    @media (max-width: 991px) {
+      .answer {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+      }
+    }
+    .btn {
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 30px;
+      background-color: #b2ffbd;
+      outline: none;
+      text-decoration: none;
+      color: black;
+    }
+    .black h1 {
+      color: #0a4713;
+    }
+    .black p {
+      font-size: 18px;
+      color: black;
+    }
+    .hide {
+      display: none;
+    }
+</style>
+<div class="container">
+<div class="black">
+<div id="primeira">
+<div class="question">
+<h1>Pregunta 1</h1>
+
+<p>¿Tiene o conoce a alguien con diabetes?</p>
+</div>
+
+<div class="answer"><button class="btn" onclick="segunda()">SÍ</button><button class="btn" onclick="segunda()">NO</button></div>
+</div>
+
+<div class="hide" id="segunda">
+<div class="question">
+<h1>Pregunta 2</h1>
+
+<p>¿Haces algún ejercicio físico?</p>
+</div>
+
+<div class="answer"><button class="btn" onclick="terceira()">SÍ</button><button class="btn" onclick="terceira()">NO</button></div>
+</div>
+
+<div class="hide" id="terceira">
+<div class="question">
+<h1>Pregunta 3</h1>
+
+<p>¿Sabías que se puede controlar sin medicación?</p>
+</div>
+
+<div class="answer"><button class="btn" onclick="redirect()">SÍ</button><button class="btn" onclick="redirect()">NO</button></div>
+</div>
+</div>
+
+<p style="text-align: center; font-weight: bold;"><span style="color:#D3D3D3;">© 2021 - Todos los derechos reservados. Este sitio web no forma parte ni está respaldado por Facebook. Facebook es una marca comercial de Facebook, Inc.</span></p>
+</div>
+
+<p></p>
+<script>
+    function segunda() {
+      document.getElementById("primeira").classList.add("hide")
+      document.getElementById("segunda").classList.remove("hide")
+    }
+    function terceira() {
+      document.getElementById("segunda").classList.add("hide")
+      document.getElementById("terceira").classList.remove("hide")
+    }
+     function redirect() {
+      location.href = "/py"
+    }
+  </script>
